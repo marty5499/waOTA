@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Webduino Firmware Uploader</title>
+  <style>
+  input {
+    font-size: 24px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  </style>
+</head>
+
+<body>
+  <h2>Device ID:
+  <input id='deviceId' value="" style="width:80px"></input>
+  </h2>
+  <h2>韌體檔案 ( *.hex ):</h2>
+  <input id='filePath' value="" style="width: 420px;" /></input>
+  <br>
+  <button id='mark1' class="button">
+    <img src='imgs/mark1.png' width='64' height='64'>
+    <br>
+    <span>燒錄韌體</span>
+  </button>
+  <button id='fly' class="button">
+    <img src='imgs/fly.png' width='64' height='64'>
+    <br>
+    <span>燒錄韌體(未完成)</span>
+  </button>
+</body>
+<script>
+require('./burn.js');
+</script>
+
+</html>
