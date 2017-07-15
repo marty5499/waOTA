@@ -19,7 +19,8 @@ function createWindow () {
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
-    slashes: true
+    slashes: true,
+    icon: path.join(__dirname, 'icons/64x64.png')
   }))
 
   // Open the DevTools.
